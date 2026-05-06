@@ -10,7 +10,10 @@ body {
   background-color: #f5f5f5;
 }
 
+/* ========================= */
 /* NAVBAR */
+/* ========================= */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -46,22 +49,16 @@ body {
   color: #f5e6d3;
 }
 
-.btn-reserve {
-  background: #f5e6d3;
-  color: #5c4033 !important;
-  padding: 8px 18px;
-  border-radius: 25px;
-  font-weight: 600;
-}
-
-/* HAMBURGER */
 .menu-toggle {
   display: none;
   font-size: 28px;
   cursor: pointer;
 }
 
-/* GENERAL SECTIONS */
+/* ========================= */
+/* GENERAL SECTION */
+/* ========================= */
+
 section {
   padding: 60px 30px;
   margin: 20px;
@@ -70,16 +67,18 @@ section {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* WELCOME SECTION  */
+/* ========================= */
+/* WELCOME */
+/* ========================= */
+
 .welcome {
   position: relative;
-  padding: 300px 20px 200px; /* space for top image */
+  padding: 300px 20px 200px;
   overflow: hidden;
   text-align: center;
   background: #8aa39b;
 }
 
-/* TOP IMAGE */
 .welcome::before {
   content: "";
   position: absolute;
@@ -91,7 +90,6 @@ section {
   z-index: 0;
 }
 
-/* GRADIENT BLEND (smooth transition) */
 .welcome::after {
   content: "";
   position: absolute;
@@ -103,18 +101,14 @@ section {
   z-index: 1;
 }
 
-/* HERO CONTENT */
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
-/* TITLE */
 .welcome-title {
   font-size: 80px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255,255,255,0.9);
   font-weight: bold;
   line-height: 1.1;
 }
@@ -124,15 +118,13 @@ section {
   font-size: 100px;
 }
 
-/* TAGLINE */
 .tagline {
   margin-top: 20px;
   font-size: 20px;
   letter-spacing: 3px;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(255,255,255,0.95);
 }
 
-/* CARD */
 .welcome-card {
   position: relative;
   background: #f3f3f3;
@@ -140,58 +132,20 @@ section {
   margin: 60px auto 0;
   padding: 40px;
   z-index: 2;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
-.welcome-card-header {
-  font-size: 20px;
-  color: rgba(31, 30, 30, 0.9);
-  font-weight: bold;
-  line-height: 1.1;
-  padding: 10px;
-}
+/* ========================= */
+/* ABOUT */
+/* ========================= */
 
-/* MOBILE FIX */
-@media (max-width: 768px) {
-
-  .welcome {
-    padding: 220px 20px 160px;
-  }
-
-  .welcome::before,
-  .welcome::after {
-    height: 220px;
-  }
-
-  .welcome-title {
-    font-size: 40px;
-  }
-
-  .welcome-title span {
-    font-size: 55px;
-  }
-
-  .tagline {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  .welcome-card {
-    padding: 25px;
-  }
-}
-
-
-/* ABOUT SECTION (MATCHES WELCOME) */
 .about-us {
   position: relative;
   background: #e1ebe7;
   padding: 300px 20px 120px;
-  overflow: hidden;
 }
 
-/* IMAGE ON TOP */
 .about-us::before {
   content: "";
   position: absolute;
@@ -203,7 +157,6 @@ section {
   z-index: 0;
 }
 
-/* GRADIENT FADE */
 .about-us::after {
   content: "";
   position: absolute;
@@ -215,7 +168,6 @@ section {
   z-index: 1;
 }
 
-/* TITLE ON IMAGE */
 .about-title {
   position: absolute;
   top: 160px;
@@ -223,34 +175,21 @@ section {
   transform: translateX(-50%);
   color: white;
   font-size: 48px;
-  font-weight: bold;
   z-index: 2;
 }
 
-/* CONTENT */
 .about-content-wrapper {
   position: relative;
   z-index: 2;
   max-width: 900px;
   margin: auto;
-  padding: 40px 20px;
-}
-
-/* TEXT */
-.about-text h3 {
-  letter-spacing: 3px;
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: #2c2b2b;
 }
 
 .about-text p {
   margin-bottom: 18px;
   line-height: 1.7;
-  color: #0f0f0f;
 }
 
-/* SIGNATURE */
 .signature {
   font-family: "Segoe Script", cursive;
   font-size: 28px;
@@ -259,25 +198,10 @@ section {
   color: #080808;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-
-  .about-us {
-    padding: 220px 20px 80px;
-  }
-
-  .about-us::before,
-  .about-us::after {
-    height: 200px;
-  }
-
-  .about-title {
-    top: 120px;
-    font-size: 28px;
-  }
-}
-
+/* ========================= */
 /* GALLERY */
+/* ========================= */
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -295,35 +219,186 @@ section {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .gallery img {
-    width: 90%;
-  }
+/* ========================= */
+/* FEATURES */
+/* ========================= */
+
+.features {
+  text-align: center;
 }
 
-
-/* FEATURES */
-.features .cards {
+.features-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .card {
-  background: #f0e6dc;
-  padding: 25px;
-  border-radius: 12px;
+  background: #f2e6d9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.img-outside {
+  object-position: right bottom;
+}
+
+.img-kitchen {
+  object-position: bottom;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+/* ========================= */
+/* FLOATING BUTTON */
+/* ========================= */
+
+.floating-book-btn {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  max-width: 420px;
   text-align: center;
+  background-color: #983232;
+  color: white;
+  padding: 16px;
+  border-radius: 30px;
+  text-decoration: none;
   font-weight: bold;
+  z-index: 9999;
 }
 
-/* CONTACT */
-.contact {
+/* ========================= */
+/* REVIEWS (FIXED) */
+/* ========================= */
+
+.reviews {
+  background: linear-gradient(135deg, #8b5e34, #6f4a2a);
+  padding: 80px 20px;
   text-align: center;
-  line-height: 1.8;
 }
 
+.reviews-title {
+  font-size: 42px;
+  font-family: 'Yeseva One', serif;
+  color: white;
+  white-space: nowrap;
+}
+
+.reviews-rating {
+  color: white;
+  margin-top: 10px;
+}
+
+.rating-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+.stars {
+  color: #df9711;
+  font-size: 24px;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.review-card {
+  background: #f5e6d3;
+  color: #5a3e2b;
+  padding: 20px;
+  border-radius: 18px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.review-card h2 {
+  font-size: 16px;
+}
+
+/* ========================= */
+/* CLEAN FAQ */
+/* ========================= */
+
+.faq {
+  background: #f5e6d3;
+  padding: 80px 20px;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-title {
+  font-family: 'Yeseva One', serif;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.faq-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #666;
+}
+
+/* ITEM */
+
+.faq-item {
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* QUESTION */
+
+.faq-question {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 8px;
+}
+
+/* ANSWER */
+
+.faq-answer {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+
+/* ========================= */
 /* FOOTER */
+/* ========================= */
+
 footer {
   text-align: center;
   background: #333;
@@ -331,59 +406,49 @@ footer {
   padding: 20px;
 }
 
+/* ========================= */
 /* MOBILE */
-@media (max-width: 768px) {
+/* ========================= */
 
-  .navbar {
-    padding: 15px 20px;
-  }
+@media (max-width: 768px) {
 
   .menu-toggle {
     display: block;
   }
 
   .nav-links {
+    display: none;
     position: absolute;
     top: 70px;
     right: 0;
-    background: #a67c52;
     width: 100%;
+    background: #a67c52;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0;
-    display: none;
+    padding: 20px;
   }
 
   .nav-links.active {
     display: flex;
   }
 
-  .welcome-bg-text {
-    font-size: 60px;
-    top: 40px;
+  .gallery img {
+    width: 90%;
   }
 
-  .tagline {
-    top: 50%;
-    font-size: 14px;
-  }
-
-  .welcome-card {
-    margin-top: 140px;
-    padding: 25px;
-  }
-
-  .about-banner {
-    height: 180px;
-    padding: 20px;
-  }
-
-  .about-banner h1 {
-    font-size: 36px;
-  }
-
-  .features .cards {
+  .features-grid {
     grid-template-columns: 1fr;
+  }
+
+  .welcome-title {
+    font-size: 40px;
+  }
+
+  .welcome-title span {
+    font-size: 55px;
+  }
+
+  .reviews-title {
+    font-size: 28px;
+    white-space: normal;
   }
 }
